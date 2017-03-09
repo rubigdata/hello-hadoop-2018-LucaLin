@@ -16,6 +16,7 @@ Useful history of commands:
     popd
 
     bin/hdfs dfs -mkdir /user/root/input
+    bin/hdfs dfs -put /mnt/bigdata/100.txt.utf-8 input
     bin/hadoop jar /mnt/bigdata/hello-hadoop/wc.jar WordCount /user/root/input /user/root/output
     bin/hadoop fs -ls output
 
