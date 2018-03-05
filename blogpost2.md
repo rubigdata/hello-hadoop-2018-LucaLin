@@ -15,9 +15,11 @@ run the hadoop commands on files, so that the files can be read by hadoop.
     2.How do you use mapreduce to count the number of lines/words/characters/… in the Complete Shakespeare?
 you change the wordcount.java file to count lines/sentences/characters instead of words. Mapper function needs to map the desired 
 text property so that the reducer can can count. For words you change it so that every word is mapped on the same key:
-public static class TokenizerMapper
-       extends Mapper<Object, Text, Text, IntWritable>{
 
+
+    public static class TokenizerMapper
+       extends Mapper<Object, Text, Text, IntWritable>{
+       
     private final static IntWritable one = new IntWritable(1);
     private Text word = new Text();
 
@@ -33,7 +35,8 @@ public static class TokenizerMapper
   }
   There are 966997 words.
 for lines, you change the code so that every line is mapped on the same key:
-public static class TokenizerMapper
+    
+    public static class TokenizerMapper
        extends Mapper<Object, Text, Text, IntWritable>{
 
     private final static IntWritable one = new IntWritable(1);
@@ -47,7 +50,8 @@ public static class TokenizerMapper
 
 There are 147838 lines.
 For characters:
-public static class TokenizerMapper
+    
+    public static class TokenizerMapper
        extends Mapper<Object, Text, Text, IntWritable>{
 
     private final static IntWritable one = new IntWritable(1);
@@ -65,7 +69,8 @@ public static class TokenizerMapper
 There are 5545144 characters.
     3.Does Romeo or Juliet appear more often in the plays? Can you answer this question making only one pass over the corpus?
 You change the map method to output all cases of romeo and juliet to their respective keys, ignoring special cases. 
- public static class TokenizerMapper
+    
+    public static class TokenizerMapper
        extends Mapper<Object, Text, Text, IntWritable>{
 
     private final static IntWritable one = new IntWritable(1);
