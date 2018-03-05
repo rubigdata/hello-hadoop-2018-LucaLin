@@ -1,14 +1,13 @@
-You need to replace PLACEHOLDER by the URL to the actual blogpost!
-
+# Blogpost
 hdfs is the hadoop distributed filesystem, dfs runs the filesystem command on the file in hadoop. 
 
-what i did
+# what i did
 First, I pulled 100.txt from the given repository and put it in a variable called input. Then I created a file called WordCount.java w
 with vi editor and ran it with as input the 100.txt file and output the result in a file named output. 
 Using bin/hadoop fs -cat hdfs://localhost:9000/user/root/output/part-r-00000, i displayed the output to obtain the results of the
 wordcount program. 
 
-
+# Questions
     1. What happens when you run the Hadoop commands (hdfs dfs etc.) in the first week’s part of the tutorial?
 hdfs is the hadoop distributed filesystem, dfs runs the filesystem command on the file in hadoop. Running these allows you to
 run the hadoop commands on files, so that the files can be read by hadoop.
