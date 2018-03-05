@@ -32,7 +32,7 @@ text property so that the reducer can can count. For words you change it so that
         }
 
     }
-  }
+    }
   There are 966997 words.
 for lines, you change the code so that every line is mapped on the same key:
     
@@ -46,7 +46,7 @@ for lines, you change the code so that every line is mapped on the same key:
                     ) throws IOException, InterruptedException {
         context.write(word, one);
     }
-  }
+    }
 
 There are 147838 lines.
 For characters:
