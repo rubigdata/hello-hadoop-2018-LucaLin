@@ -1,0 +1,18 @@
+You need to replace PLACEHOLDER by the URL to the actual blogpost!
+
+hdfs is the hadoop distributed filesystem, dfs runs the filesystem command on the file in hadoop. 
+
+First, I pulled 100.txt from the given repository and put it in a variable called input. Then I created a file called WordCount.java w
+with vi editor and ran it with as input the 100.txt file and output the result in a file named output. 
+Using bin/hadoop fs -cat hdfs://localhost:9000/user/root/output/part-r-00000, i displayed the output to obtain the results of the
+wordcount program. 
+
+
+    1. What happens when you run the Hadoop commands (hdfs dfs etc.) in the first week’s part of the tutorial?
+hdfs is the hadoop distributed filesystem, dfs runs the filesystem command on the file in hadoop. Running these allows you to
+run the hadoop commands on files.
+
+    2.How do you use mapreduce to count the number of lines/words/characters/… in the Complete Shakespeare?
+you change the wordcount.java file to count lines/sentences/characters instead of words. Mapper function needs to map the desired 
+text property so that the reducer can can count.
+    Does Romeo or Juliet appear more often in the plays? Can you answer this question making only one pass over the corpus?
