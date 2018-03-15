@@ -3,7 +3,7 @@ Initialization repo for assignment 2
 
 ## Blog post
 
-+ https://github.com/rubigdata/hello-hadoop-2018-agaham/blob/master/blogpost2.
++ https://github.com/rubigdata/hello-hadoop-2018-agaham/blob/master/blogpost2.md
 
 Remember to update this README file with a link to the published blog post when you are done!
 
